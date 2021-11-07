@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 class CalculatorTest {
     @Test
-    void shouldAddTwoValues_Minus1AndThree() {
+    void shouldAddTwoValues_MinusOneAndThree() {
         Calculator calculator = new Calculator();
         int value1 = -1;
         int value2 = 3;
@@ -15,7 +15,7 @@ class CalculatorTest {
 
     }
     @Test
-    void TestingSubstraction() {
+    void testingSubstraction() {
         Calculator calculator = new Calculator();
         int value1 = -2;
         int value2 = -5;
@@ -33,7 +33,7 @@ class CalculatorTest {
 
     }
     @Test
-    void TestingMultiplication() {
+    void testingMultiplication() {
         Calculator calculator = new Calculator();
         double value1 = 2.5;
         double value2 = -3;
