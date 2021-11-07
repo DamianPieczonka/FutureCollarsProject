@@ -15,7 +15,7 @@ class CalculatorTest {
 
     }
     @Test
-    void testingSubstraction() {
+    void shouldSubstract_MinusTwoAndMinusFive() {
         Calculator calculator = new Calculator();
         int value1 = -2;
         int value2 = -5;
@@ -25,7 +25,7 @@ class CalculatorTest {
         Assertions.assertEquals( 3, substract);
     }
     @Test
-    void testingMultiplication() {
+    void shouldMultiply_TwoAndAHalfAndMinusThree() {
         Calculator calculator = new Calculator();
         double value1 = 2.5;
         double value2 = -3;
@@ -35,7 +35,7 @@ class CalculatorTest {
         Assertions.assertEquals( -7.5, multiply);
     }
     @Test
-    void testingMultiplicationTwo() {
+    void shouldMultiply_SixAndZero() {
         Calculator calculator = new Calculator();
         double value1 = 6;
         double value2 = 0;
@@ -59,7 +59,7 @@ class CalculatorTest {
         });
     }
     @Test
-        void shouldDivideTwoValues(){
+        void shouldDivide_TwoAndAHalfAndTwoAndAHalf(){
         Calculator calculator = new Calculator();
         double value1 = 2.5;
         double value2 = 2.5;
