@@ -4,13 +4,13 @@ public class Calculator {
 
     public Calculator(){
     }
-    public double sum(double firstArg, double secondArg) {
+    public double sum (double firstArg, double secondArg) {
         return firstArg + secondArg;
     }
-    public double substract(double firstArg, double secondArg) {
+    public double substract (double firstArg, double secondArg) {
         return firstArg - secondArg;
     }
-    public double divide(double firstArg, double secondArg) {
+    public double divide (double firstArg, double secondArg) {
         if(secondArg == 0) {
             throw new RuntimeException();
         }
@@ -18,7 +18,7 @@ public class Calculator {
             return firstArg / secondArg;
         }
     }
-    public double multiply(double firstArg, double secondArg) {
+    public double multiply (double firstArg, double secondArg) {
         return firstArg * secondArg;
     }
 }
