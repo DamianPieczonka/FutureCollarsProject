@@ -5,33 +5,21 @@ public class Calculator {
     public Calculator(){
     }
     public double sum(double firstArg, double secondArg) {
-        double result = firstArg + secondArg;
-        System.out.println(result);
-        return result;
+        return firstArg + secondArg;
     }
     public double substract(double firstArg, double secondArg) {
-        double result = firstArg - secondArg;
-        System.out.println(result);
-        return result;
+        return firstArg - secondArg;
     }
     public double divide(double firstArg, double secondArg) {
         if(secondArg == 0) {
-            System.out.println("Podaj wartość większą od zera");
             throw new RuntimeException();
         }
-        else
-        {
-            double result = firstArg / secondArg;
-            System.out.println(result);
-            return result;
+        else {
+            return firstArg / secondArg;
         }
     }
     public double multiply(double firstArg, double secondArg) {
-        double result = firstArg * secondArg;
-        System.out.println(result);
-        return result;
+        return firstArg * secondArg;
     }
-
-
 }
 

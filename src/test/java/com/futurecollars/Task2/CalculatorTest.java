@@ -20,17 +20,9 @@ class CalculatorTest {
         int value1 = -2;
         int value2 = -5;
 
-        double substractOne = calculator.substract(value1, value2);
+        double substract = calculator.substract(value1, value2);
 
-        Assertions.assertEquals( 3, substractOne);
-        int value3 = 0;
-        int value4 = 1;
-
-        double substractTwo = calculator.substract(value3, value4);
-
-        Assertions.assertEquals( -1, substractTwo);
-
-
+        Assertions.assertEquals( 3, substract);
     }
     @Test
     void testingMultiplication() {
@@ -38,17 +30,19 @@ class CalculatorTest {
         double value1 = 2.5;
         double value2 = -3;
 
-        double multiplyOne = calculator.multiply(value1, value2);
+        double multiply = calculator.multiply(value1, value2);
 
-        Assertions.assertEquals( -7.5, multiplyOne);
+        Assertions.assertEquals( -7.5, multiply);
+    }
+    @Test
+    void testingMultiplicationTwo() {
+        Calculator calculator = new Calculator();
+        double value1 = 6;
+        double value2 = 0;
 
-        double value3 = 2.5;
-        double value4 = 0;
+        double multiply = calculator.multiply(value1, value2);
 
-        double multiplyTwo = calculator.multiply(value3, value4);
-
-        Assertions.assertEquals( 0, multiplyTwo);
-
+        Assertions.assertEquals( 0, multiply);
     }
 
 
@@ -63,10 +57,14 @@ class CalculatorTest {
             double result = calculator.divide(value1, value2);
 
         });
-        double value3 = 2.5;
-        double value4 = 2.5;
+    }
+    @Test
+        void shouldDivideTwoValues(){
+        Calculator calculator = new Calculator();
+        double value1 = 2.5;
+        double value2 = 2.5;
 
-        double divide = calculator.divide(value3, value4);
+        double divide = calculator.divide(value1, value2);
 
         Assertions.assertEquals( 1, divide);
 
