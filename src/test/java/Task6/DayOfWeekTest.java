@@ -8,30 +8,31 @@ class DayOfWeekTest {
     void shouldCheckIfWednesday() {
         int value1 = 3;
 
-        String Day=DayOfWeek.DaysOfWeek(value1);
-        Assertions.assertEquals("Wednesday",Day);
+        String day = DayOfWeek.DaysOfWeek(value1);
+        Assertions.assertEquals("Wednesday", day);
 
 
     }
+
     @Test
     void shouldCheckIfWeekend() {
         int value1 = 6;
 
-        String Day=DayOfWeek.DaysOfWeek(value1);
-        Assertions.assertEquals("Weekend",Day);
+        String day = DayOfWeek.DaysOfWeek(value1);
+        Assertions.assertEquals("Weekend", day);
 
 
     }
+
     @Test
     void shouldCheckIfThereIsNoDay() {
         int value1 = 8;
 
-        String Day=DayOfWeek.DaysOfWeek(value1);
-        Assertions.assertEquals("There is no such a day!",Day);
+        String day = DayOfWeek.DaysOfWeek(value1);
+        Assertions.assertEquals("There is no such a day!", day);
 
 
     }
-
 
 
 }

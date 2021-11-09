@@ -3,17 +3,23 @@ package Task6;
 public class DayOfWeek {
 
 
-    public static String DaysOfWeek (int arg) {
-        String Day;
+    public static String DaysOfWeek(int arg) {
         switch (arg) {
-            case 1:  Day= "Monday"; break;
-            case 2:  Day= "Tuesday"; break;
-            case 3:  Day= "Wednesday"; break;
-            case 4:  Day= "Thursday"; break;
-            case 5:  Day= "Friday"; break;
-            case 6: case 7: Day = "Weekend"; break;
-            default: Day = "There is no such a day!"; break;
+            case 1:
+                return "Monday";
+            case 2:
+                return "Tuesday";
+            case 3:
+                return "Wednesday";
+            case 4:
+                return "Thursday";
+            case 5:
+                return "Friday";
+            case 6:
+            case 7:
+                return "Weekend";
+            default:
+                return "There is no such a day!";
         }
-        return Day;
     }
 }
