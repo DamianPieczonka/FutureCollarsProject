@@ -9,15 +9,15 @@ class ConvertTest {
     @Test
     void shouldCheckIfConvertsDouble() {
         double minutes = 5.3;
-        double seconds = minutes * 60;
-        Assertions.assertEquals(318, seconds);
+        double value = Convert.convertion(minutes);
+        Assertions.assertEquals(318, value);
     }
 
     @Test
     void shouldCheckIfConvertsInt() {
         double minutes = 2;
-        double seconds = minutes * 60;
-        Assertions.assertEquals(120, seconds);
+        double value = Convert.convertion(minutes);
+        Assertions.assertEquals(120, value);
     }
 
 }
