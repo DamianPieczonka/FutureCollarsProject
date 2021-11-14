@@ -2,17 +2,12 @@ package com.futurecollars.Task5;
 
 public class Pitagoras {
 
-    public static String pitagoras(int a, int b, int c) {
+    public static boolean pitagoras(int a, int b, int c) {
 
         if (a + b < c) {
-            return "Triangle does not exist";
+            return false;
         } else {
-            if (a * a + b * b == c * c) {
-                return "Triangle is rectangular";
-            } else {
-                return "Triangle is not rectangular";
-            }
+            return a * a + b * b == c * c;
         }
-
     }
 }
