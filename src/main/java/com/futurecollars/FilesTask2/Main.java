@@ -1,5 +1,4 @@
 package com.futurecollars.FilesTask2;
-
 import java.io.*;
 import java.net.URISyntaxException;
 import java.net.URL;
@@ -13,7 +12,7 @@ public class Main {
         File file = new File(resourcePath.toURI());
         file.createNewFile();
         OutputStream outputstream = new FileOutputStream(file);
-        String text = "Kurs\nJava\nLekcja 6\nPliki\nWyj¹tki\nPliki\nKoniec Pliku";
+        String text = "Kurs\nJava\nLekcja 6\nPliki\nWyjï¿½tki\nPliki\nKoniec Pliku";
         outputstream.write(text.getBytes());
         outputstream.close();
         readEverySecondLine("C:/Users/Asus/IdeaProjects/start2/src/main/resources/data.txt");
@@ -42,6 +41,18 @@ public class Main {
             }
         }
     }
+}
+        String text = "Kurs\nJava\nLekcja 6\nPliki\nWyjÄ…tki\nPliki\nKoniec Pliku";
+        outputstream.write(text.getBytes());
+        outputstream.close();
 
+        InputStream inputstream = new FileInputStream(file);
+        int character = inputstream.read();
+        while (character != -1) {
+            System.out.print((char) character);
+            character = inputstream.read();
+        }
+        inputstream.close();
 
+    }
 }
