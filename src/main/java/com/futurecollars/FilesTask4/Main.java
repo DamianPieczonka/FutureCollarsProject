@@ -16,7 +16,7 @@ public class Main {
         String text = "Kurs\nJava\nLekcja 6\nPliki\nWyj¹tki\nPliki\nKoniec Pliku";
         outputstream.write(text.getBytes());
         outputstream.close();
-        searchWord("C:/Users/Asus/IdeaProjects/start2/src/main/resources/data.txt");
+        searchWord(file.getAbsolutePath());
 
 
     }
@@ -36,9 +36,7 @@ public class Main {
                 }
             }
         } finally {
-            if (br != null) {
-                br.close();
-            }
+            br.close();
         }
     }
 
