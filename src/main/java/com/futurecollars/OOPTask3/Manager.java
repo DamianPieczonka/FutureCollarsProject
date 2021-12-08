@@ -2,29 +2,30 @@ package com.futurecollars.OOPTask3;
 
 public class Manager extends BaseEmployee {
 
-    private int bonus = BaseEmployee.managerBonus;
+    public static final int MANAGER_BASE_SALARY = 5000;
+    public static int BONUS = 500;
 
     public Manager(String name, String surname, int baseSalary, int employmentDate) {
-        super(name, surname, baseSalary, employmentDate);
-        bonus = BaseEmployee.managerBonus;
+        super(name, surname, MANAGER_BASE_SALARY, employmentDate);
+        BONUS = this.BONUS;
     }
 
     public Manager(String name, String surname, int employmentDate) {
-        super(name, surname, BaseEmployee.managerBaseSalary, employmentDate);
-        bonus = BaseEmployee.managerBonus;
+        super(name, surname, MANAGER_BASE_SALARY, employmentDate);
+        BONUS = this.BONUS;
     }
 
     public Manager(int baseSalary, int employmentDate) {
         super(baseSalary, employmentDate);
-        bonus = BaseEmployee.managerBonus;
+        BONUS = this.BONUS;
     }
 
     public void setBonus(int bonus) {
-        this.bonus = bonus;
+        this.BONUS = bonus;
     }
 
     @Override
     public int calculateMonthlySalary() {
-        return bonus+(super.getBaseSalary());
+        return BONUS+(super.getBaseSalary());
     }
 }
