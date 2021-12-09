@@ -21,5 +21,6 @@ public class DayName {
             default:
                 return "Wrong day";
         }
+
     }
 }
