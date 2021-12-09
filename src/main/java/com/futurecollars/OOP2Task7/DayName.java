@@ -1,32 +1,25 @@
 package com.futurecollars.OOP2Task7;
 
 public class DayName {
-    private String day;
 
     public String getName(Day day) {
         switch (day) {
             case MONDAY:
-                this.day = "Monday";
-                break;
+                return "Monday";
             case TUESDAY:
-                this.day = "Tuesday";
-                break;
+                return "Tuesday";
             case WEDNESDAY:
-                this.day = "Wednesday";
-                break;
+                return "Wednesday";
             case THURSDAY:
-                this.day = "Thursday";
-                break;
+                return "Thursday";
             case FRIDAY:
-                this.day = "friday";
-                break;
+                return "friday";
             case SATURDAY:
-                this.day = "Saturday";
-                break;
+                return "Saturday";
+            case SUNDAY:
+                return "Sunday";
             default:
-                this.day = "Sunday";
-                break;
+                return "Wrong day";
         }
-        return this.day;
     }
 }
