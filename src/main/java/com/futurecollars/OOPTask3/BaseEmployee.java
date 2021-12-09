@@ -4,23 +4,23 @@ public abstract class BaseEmployee {
 
     private String name;
     private String surname;
-    private int BASE_SALARY;
+    private int baseSalary;
     private int employmentDate;
 
     public BaseEmployee(String name, String surname, int baseSalary, int employmentDate) {
         this.name = name;
         this.surname = surname;
-        this.BASE_SALARY = baseSalary;
+        this.baseSalary = baseSalary;
         this.employmentDate = employmentDate;
     }
 
     public BaseEmployee(int baseSalary, int employmentDate) {
-        this.BASE_SALARY = baseSalary;
+        this.baseSalary = baseSalary;
         this.employmentDate = employmentDate;
     }
 
     public final int getBaseSalary() {
-        return BASE_SALARY;
+        return baseSalary;
     }
 
     public final int getEmploymentDate() {
