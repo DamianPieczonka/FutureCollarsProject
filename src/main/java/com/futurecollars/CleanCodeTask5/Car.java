@@ -1,6 +1,7 @@
 package com.futurecollars.CleanCodeTask5;
 
-public class Car extends Vehicle {
+public class Car implements Vehicle {
+
     private boolean engineStarted;
     protected void startEngine() {
         if (!engineStarted) {
@@ -15,5 +16,10 @@ public class Car extends Vehicle {
     }
     public void setEngineStarted(boolean engineStarted) {
         this.engineStarted = engineStarted;
+    }
+
+    @Override
+    public boolean isEngineStarted() {
+        return engineStarted;
     }
 }
